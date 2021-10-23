@@ -1,5 +1,7 @@
-import React from 'react'
-import 'animate.css'
+import React, { useState } from 'react'
+
+import "animate.css"
+
 
 //Paginas
 import NavBar from './components/NavBar'
@@ -12,9 +14,16 @@ import { Footer } from './components/Footer'
 
 const App = () => {
 
+  const [isDark, setDark] = useState(false)
+
+  const toggleDark = () => {
+    setDark(!isDark)
+    console.log(isDark)
+  }
+
   return (
     <main className='text-gray-400 bg-gray-900 body-font w-50'>
-      <NavBar />
+      <NavBar isDark={isDark} toggleDark={toggleDark} />
       <About />
       <Projects />
       <Skills />

@@ -1,7 +1,5 @@
 import React from 'react'
-
-import { FaArchive, FaAt } from 'react-icons/fa'
-
+// import { FaArchive, FaAt } from 'react-icons/fa'
 
 const About = () => {
     return (
@@ -21,14 +19,13 @@ const About = () => {
                         <a
                             href='#contact'
                             className='inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg items-center'>
-                            <FaAt size={24} className='h-8 mr-4' />
+                            {/* <FaAt size={24} className='h-8 mr-4' /> */}
                             Work with me
                         </a>
                         <a
                             href='#projects'
                             className='ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg items-center'>
-                            <FaArchive size={24} className='h-8 mr-4' />
-
+                            {/* <FaArchive size={24} className='h-8 mr-4' /> */}
                             Some of my work
                         </a>
                     </div>
