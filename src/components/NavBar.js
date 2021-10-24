@@ -1,12 +1,12 @@
 import React from 'react'
-import { FaAt } from 'react-icons/fa'
+import { FaArrowRight } from 'react-icons/fa'
 import { HiSun, HiMoon } from 'react-icons/hi'
 
 const NavBar = ({ isDark, toggleDark }) => {
     return (
-        <header className='bg-gray-800 md:sticky top-0 z-10 animate__animated animate__fadeInDown'>
+        <header className='dark:bg-gray-800 bg-gray-300 md:sticky top-0 z-10 animate__animated animate__fadeInDown'>
             <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
-                <div className='title-font font-medium text-white mb-4 md:mb-0'>
+                <div className='title-font font-medium dark:text-white mb-4 md:mb-0'>
                     <a href='#about' className='ml-3 text-xl'>
                         Felipe Noriega
                     </a>
@@ -24,17 +24,19 @@ const NavBar = ({ isDark, toggleDark }) => {
                 </nav>
                 <a
                     href='#contact'
-                    className='inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-base mt-4 md:mt-0'>
-                    <FaAt size={16} className='ml-1' />
+                    className='inline-flex items-center border border-gray-600 py-1 px-3 focus:outline-none hover:text-white hover:bg-gray-600 rounded text-base mt-4 md:mt-0'>
                     &nbsp; Contact Me
+                    <FaArrowRight size={16} className='ml-1' />
                 </a>
                 <div className="inline-flex ml-16">
-                    <button className='border-gray-700	mx-auto p-1 bg-gray-800 border focus:outline-none hover:text-white hover:bg-gray-700 rounded-full '>
+                    <button
+                        className='border-gray-600	mx-auto p-1 border focus:outline-none hover:text-white hover:bg-gray-600 rounded-full '
+                        onClick={toggleDark}>
 
                         {isDark ?
-                            <HiMoon size={36} className="h-6 w-6 animate__animated animate__fadeIn" onClick={toggleDark} />
+                            <HiSun size={36} className="h-6 w-6 animate__animated animate__fadeIn" />
                             :
-                            <HiSun size={36} className="h-6 w-6 animate__animated animate__fadeIn" onClick={toggleDark} />
+                            <HiMoon size={36} className="h-6 w-6 animate__animated animate__fadeIn" />
                         }
                     </button>
                 </div>

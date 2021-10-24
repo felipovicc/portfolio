@@ -6,7 +6,7 @@ const About = () => {
         <section id='about'>
             <div className='container mx-auto flex px-10 py-20 md:flex-row flex-col items-center'>
                 <div className='lg:flex-grow md:w-2/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center animate__animated animate__fadeInLeft'>
-                    <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-white'>
+                    <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium dark:text-white '>
                         Hi, I&apos;m Felipe.
                         <br className=' lg:inline-block' />
                         Frontend developer and graphic designer.
@@ -24,7 +24,7 @@ const About = () => {
                         </a>
                         <a
                             href='#projects'
-                            className='ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg items-center'>
+                            className='ml-4 inline-flex text-white bg-gray-600  border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 rounded text-lg items-center'>
                             {/* <FaArchive size={24} className='h-8 mr-4' /> */}
                             Some of my work
                         </a>

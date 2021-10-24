@@ -1,8 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import "animate.css"
-
-
 //Paginas
 import NavBar from './components/NavBar'
 import About from './components/About'
@@ -14,15 +12,23 @@ import { Footer } from './components/Footer'
 
 const App = () => {
 
-  const [isDark, setDark] = useState(false)
+  const [isDark, setDark] = useState(true)
 
   const toggleDark = () => {
     setDark(!isDark)
-    console.log(isDark)
   }
 
+  useEffect(() => {
+    const root = window.document.documentElement
+    isDark ?
+      root.classList.add("dark")
+      :
+      root.classList.remove("dark")
+
+  }, [isDark])
+
   return (
-    <main className='text-gray-400 bg-gray-900 body-font w-50'>
+    <main className='bg-gray-200 text-gray-900 dark:text-gray-400 dark:bg-gray-900 body-font w-50'>
       <NavBar isDark={isDark} toggleDark={toggleDark} />
       <About />
       <Projects />
