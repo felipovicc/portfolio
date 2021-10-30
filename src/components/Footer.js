@@ -11,10 +11,10 @@ export const Footer = () => {
                 </p>
                 <span className='inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start'>
                     <a href='https://github.com/felipovicc' className=' hover:text-gray-600 dark:hover:text-white' target='_blank' rel='noopener noreferrer'>
-                        <FaLinkedinIn size={24} />
+                        <FaGithub size={24} />
                     </a>
                     <a href='https://www.linkedin.com/in/felipenl92/' className='ml-3 hover:text-gray-600 dark:hover:text-white' target='_blank' rel='noopener noreferrer'>
-                        <FaGithub size={24} />
+                        <FaLinkedinIn size={24} />
                     </a>
                 </span>
             </div>
