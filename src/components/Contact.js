@@ -23,7 +23,7 @@ const Contact = () => {
   };
 
   const validateForm = () => {
-    return false;
+    return true;
   };
 
   const handleSubmit = (e) => {
@@ -33,10 +33,8 @@ const Contact = () => {
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({ 'form-name': 'contact', name, email, message }),
-      })
-        .then(() => console.log('Message sent!'))
-        .catch((error) => console.error(error));
+        body: encode({ 'form-name': 'contact', name: name, email, message }),
+      }).catch((error) => console.error(error));
     }
   };
 
