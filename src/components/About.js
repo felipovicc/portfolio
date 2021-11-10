@@ -15,14 +15,14 @@ const About = () => {
           <div className='flex justify-center items-center'>
             <a
               href='#contact'
-              className='inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg items-center'
+              className='inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg items-center'
             >
               {/* <FaAt size={24} className='h-8 mr-4' /> */}
               Work with me
             </a>
             <a
               href='#projects'
-              className='ml-4 inline-flex bg-gray-200 dark:bg-gray-900 border border-gray-500 py-2 px-6 focus:outline-none hover:text-white hover:bg-gray-600 dark:hover:bg-gray-600 rounded text-lg '
+              className='ml-4 inline-flex bg-gray-200 dark:bg-gray-900 border border-gray-500 py-2 px-6 focus:outline-none hover:text-white hover:bg-gray-500 dark:hover:bg-gray-500 rounded text-lg '
             >
               {/* <FaArchive size={24} className='h-8 mr-4' /> */}
               Some of my work
