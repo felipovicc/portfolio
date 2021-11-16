@@ -4,7 +4,7 @@ import { HiSun, HiMoon } from 'react-icons/hi';
 
 const NavBar = ({ isDark, toggleDark }) => {
   return (
-    <header className='text-gray-300 bg-gray-700 dark:bg-gray-800 md:sticky top-0 z-10 animate__animated animate__fadeInDown'>
+    <header className='text-gray-300 bg-gray-700 dark:bg-gray-800 md:sticky top-0 z-10 animate__animated animate__fadeInDown shadow-lg'>
       <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-center'>
         <div className='title-font font-medium text-white mb-4 md:mb-0'>
           <a href='#about' className='md:ml-3 text-xl'>

@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
-    <div className='text-gray-300 bg-gray-700 dark:bg-gray-800 animate__animated animate__fadeInUp'>
+    <div className='text-gray-300 bg-gray-700 dark:bg-gray-800 animate__animated animate__fadeInUp shadow-lg'>
       <div className='container mx-auto p-5 flex flex-wrap flex-col sm:flex-row'>
         <p className='text-md text-center sm:text-left'>
           © 2021 Copyright:

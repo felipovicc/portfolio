@@ -11,7 +11,7 @@ import Contact from './components/Contact';
 import { Footer } from './components/Footer';
 
 const App = () => {
-  const [isDark, setDark] = useState(true);
+  const [isDark, setDark] = useState(false);
 
   const toggleDark = () => {
     setDark(!isDark);
@@ -23,7 +23,7 @@ const App = () => {
   }, [isDark]);
 
   return (
-    <main className='bg-gray-200 text-gray-700 dark:text-gray-400 dark:bg-gray-900 body-font w-50'>
+    <main className='bg-gray-100 text-gray-700 dark:text-gray-400 dark:bg-gray-900 body-font w-50'>
       <NavBar isDark={isDark} toggleDark={toggleDark} />
       <About />
       <Projects />

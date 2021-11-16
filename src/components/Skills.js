@@ -6,9 +6,8 @@ import { MdDesignServices } from 'react-icons/md';
 
 const Skils = () => {
   const getSkillIcon = (type) => {
-    const iconStyle =
-      'text-blue-600 dark:text-blue-400 w-6 h-6 flex-shrink-0 mr-4';
-    const iconSize = 32;
+    const iconStyle = 'text-blue-500 dark:text-blue-400 flex-shrink-0 mr-4';
+    const iconSize = 24;
     switch (type) {
       case 'development':
         return <HiCode size={iconSize} className={iconStyle} />;
@@ -21,8 +20,8 @@ const Skils = () => {
 
   const renderSkill = (skill) => {
     return (
-      <div key={skill.name} className='p-2 sm:w-1/2 w-full'>
-        <div className='bg-gray-300 dark:bg-gray-800 rounded flex p-4 h-full items-center '>
+      <div key={skill.name} className='p-2 sm:w-1/2 w-full '>
+        <div className='bg-gray-300  dark:bg-gray-800 rounded flex p-4 h-full items-center shadow-md'>
           {getSkillIcon(skill.type)}
           <span className='title-font font-medium dark:text-white'>
             {skill.name}
@@ -33,7 +32,7 @@ const Skils = () => {
   };
 
   return (
-    <section id='skills' className='animate__animated animate__fadeIn'>
+    <section id='skills' className='animate__animated animate__fadeInLeft'>
       <div className='container px-5 py-10 mx-auto'>
         <div className='text-center mb-20'>
           <HiOutlineChip size={48} className='inline-block mb-4' />
