@@ -15,7 +15,7 @@ const About = () => {
           <div className='flex justify-center items-center'>
             <a
               href='#contact'
-              className='inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg items-center shadow-md'
+              className='inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg items-center shadow-md'
             >
               {/* <FaAt size={24} className='h-8 mr-4' /> */}
               Work with me

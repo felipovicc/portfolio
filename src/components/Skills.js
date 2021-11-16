@@ -6,7 +6,7 @@ import { MdDesignServices } from 'react-icons/md';
 
 const Skils = () => {
   const getSkillIcon = (type) => {
-    const iconStyle = 'text-blue-500 dark:text-blue-400 flex-shrink-0 mr-4';
+    const iconStyle = 'text-green-400 flex-shrink-0 mr-4';
     const iconSize = 24;
     switch (type) {
       case 'development':

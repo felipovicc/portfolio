@@ -58,25 +58,27 @@ const Contact = () => {
           />
           <div className='bg-gray-200 text-gray-800 dark:text-gray-200 dark:bg-gray-900 relative flex flex-wrap py-6 rounded shadow-lg'>
             <div className='lg:w-1/2 px-6'>
-              <h2 className='title-font font-semibold tracking-widest text-xs '>
+              <h2 className='title-font font-bold tracking-widest text-xs '>
                 CURRENTLY BASED AT
               </h2>
-              <p className='mt-1'>Barcelona, Spain</p>
+              <p className='mt-1 dark:text-gray-400'>Barcelona, Spain</p>
             </div>
             <div className='lg:w-1/2 px-6 mt-4 lg:mt-0'>
-              <h2 className='title-font font-semibold tracking-widest text-xs'>
+              <h2 className='title-font font-bold tracking-widest text-xs'>
                 EMAIL
               </h2>
               <a
-                className='leading-relaxed hover:text-gray-600 dark:hover:text-white'
+                className='leading-relaxed dark:text-gray-400 hover:text-gray-600 dark:hover:text-white'
                 href='mailto:felipovicc@gmail.com'
               >
                 felipovicc@gmail.com
               </a>
-              <h2 className='title-font font-semibold  tracking-widest text-xs mt-4 '>
+              <h2 className='title-font font-bold  tracking-widest text-xs mt-4 '>
                 PHONE
               </h2>
-              <p className='leading-relaxed'>+34 684 607 718</p>
+              <p className='leading-relaxed dark:text-gray-400'>
+                +34 684 607 718
+              </p>
             </div>
           </div>
         </div>
@@ -102,7 +104,7 @@ const Contact = () => {
               id='name'
               name='name'
               placeholder='Your name'
-              className='placeholder-gray-500 dark:placeholder-gray-400 w-full bg-gray-200 dark:bg-gray-800 rounded border border-gray-500  focus:ring-2 focus:ring-blue-500 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+              className='placeholder-gray-500 dark:placeholder-gray-400 w-full bg-gray-200 dark:bg-gray-800 rounded border border-gray-500  focus:ring-2 focus:ring-green-500 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
               value={formData.name}
               onChange={handleChange}
             />
@@ -119,7 +121,7 @@ const Contact = () => {
               id='email'
               name='email'
               placeholder='your@email.com'
-              className='placeholder-gray-500 dark:placeholder-gray-400 w-full bg-gray-200 dark:bg-gray-800 rounded border border-gray-500  focus:ring-2 focus:ring-blue-500 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+              className='placeholder-gray-500 dark:placeholder-gray-400 w-full bg-gray-200 dark:bg-gray-800 rounded border border-gray-500  focus:ring-2 focus:ring-green-500 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
               value={formData.email}
               onChange={handleChange}
             />
@@ -134,7 +136,7 @@ const Contact = () => {
             <textarea
               id='message'
               name='message'
-              className='placeholder-gray-500 dark:placeholder-gray-400 w-full bg-gray-200 dark:bg-gray-800 rounded border border-gray-500 focus:ring-2 focus:ring-blue-500 h-24 text-base outline-none py-1 px-3 leading-6 transition-colors duration-200 ease-in-out resize-none	overflow-y-auto'
+              className='placeholder-gray-500 dark:placeholder-gray-400 w-full bg-gray-200 dark:bg-gray-800 rounded border border-gray-500 focus:ring-2 focus:ring-green-500 h-24 text-base outline-none py-1 px-3 leading-6 transition-colors duration-200 ease-in-out resize-none	overflow-y-auto'
               placeholder='Your message'
               value={formData.message}
               onChange={handleChange}

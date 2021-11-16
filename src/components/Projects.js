@@ -33,8 +33,8 @@ const Projects = () => {
                   className='absolute inset-0 w-full h-full object-cover object-center rounded'
                   src={project.image}
                 />
-                <div className='px-8 py-10 relative z-10 w-full border-4 rounded border-gray-500 bg-gray-300 dark:bg-gray-900 opacity-0 hover:opacity-100  overflow-y-auto scroll'>
-                  <h2 className='tracking-widest text-sm title-font font-medium text-green-400 mb-1'>
+                <div className='px-8 py-10 relative z-10 w-full border-2 rounded border-gray-500 bg-gray-300 dark:bg-gray-900 opacity-0 hover:opacity-90  overflow-y-auto scroll'>
+                  <h2 className='tracking-widest text-lg title-font font-bold text-green-400 mb-1 uppercase'>
                     {project.subtitle}
                   </h2>
                   <h1 className='title-font text-lg font-medium dark:text-white mb-3'>

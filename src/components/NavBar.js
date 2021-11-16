@@ -31,21 +31,15 @@ const NavBar = ({ isDark, toggleDark }) => {
             <FaArrowRight size={16} className='ml-1' />
           </a>
         </div>
-        <div className='md:ml-16 justify-center items-center mt-4 md:mt-0'>
+        <div className='mx-4 justify-center items-center mt-4 md:mt-0'>
           <button
-            className='border-gray-500	mx-auto p-1 border focus:outline-none hover:text-white hover:bg-gray-500 rounded-full '
+            className='border-gray-500 py-1 px-1.5 border focus:outline-none hover:text-white hover:bg-gray-500 rounded '
             onClick={toggleDark}
           >
             {isDark ? (
-              <HiSun
-                size={36}
-                className='h-6 w-6 animate__animated animate__fadeIn'
-              />
+              <HiSun className='h-6 w-6 animate__animated animate__fadeIn' />
             ) : (
-              <HiMoon
-                size={36}
-                className='h-6 w-6 animate__animated animate__fadeIn'
-              />
+              <HiMoon className='h-6 w-6 animate__animated animate__fadeIn' />
             )}
           </button>
         </div>
