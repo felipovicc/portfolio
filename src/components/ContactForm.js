@@ -35,16 +35,16 @@ const ContactForm = () => {
 
   return status ? (
     status === 'SUCCESS' ? (
-      <div className='flex my-auto text-green-400 animate__animated animate__fadeInDown '>
-        <MdDone size={64} className='mx-2' />
+      <div className='m-auto text-green-400 animate__animated animate__fadeInDown '>
+        <MdDone size={100} className='mx-auto my-2' />
         <div>
           <h2 className='text-xl'>Thank you for your message.</h2>
           <h3>I'll get back at you as soon as posible!</h3>
         </div>
       </div>
     ) : (
-      <div className='flex my-auto text-red-500 animate__animated animate__fadeInDown '>
-        <MdErrorOutline size={64} className='mx-2' />
+      <div className='m-auto text-red-500 animate__animated animate__fadeInDown '>
+        <MdErrorOutline size={100} className='mx-auto my-2' />
         <div>
           <h2 className='text-xl'>There has been an error</h2>
           <h3>Please, try again later.</h3>
