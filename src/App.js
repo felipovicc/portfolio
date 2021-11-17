@@ -11,7 +11,7 @@ import Contact from './components/Contact';
 import { Footer } from './components/Footer';
 
 const App = () => {
-  const [isDark, setDark] = useState(false);
+  const [isDark, setDark] = useState(true);
 
   const toggleDark = () => {
     setDark(!isDark);

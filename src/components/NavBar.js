@@ -29,11 +29,11 @@ const NavBar = ({ isDark, toggleDark }) => {
         </div>
         {showMenu && (
           <nav className='flex flex-1 flex-column md:flex-row items-center justify-between order-3 md:order-2 mt-2 md:mt-0'>
-            <div className='md:ml-14'>
-              <a href='#projects' className='mx-2 hover:text-white'>
+            <div className='md:ml-4'>
+              <a href='#projects' className='mx-4 hover:text-white'>
                 Portfolio
               </a>
-              <a href='#skills' className='mx-2 hover:text-white'>
+              <a href='#skills' className='mx-4 hover:text-white'>
                 Skills
               </a>
             </div>
