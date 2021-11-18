@@ -21,7 +21,7 @@ const Skils = () => {
   const renderSkill = (skill) => {
     return (
       <div key={skill.name} className='p-2 sm:w-1/2 w-full '>
-        <div className='bg-gray-300 hover:bg-gray-400 dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700 rounded flex p-4 h-full items-center shadow-md'>
+        <div className='bg-gray-300 dark:text-white dark:bg-gray-800 rounded flex p-4 h-full items-center shadow-md'>
           {getSkillIcon(skill.type)}
           <span className='title-font font-medium dark:text-white'>
             {skill.name}

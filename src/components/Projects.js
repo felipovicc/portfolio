@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section
       id='projects'
-      className='body-font animate__animated animate__fadeInRight'
+      className=' mx-auto body-font animate__animated animate__fadeInUp'
     >
       <div className='container px-5 py-10 mx-auto text-center lg:px-40'>
         <div className='flex flex-col w-full mb-20'>
@@ -20,14 +20,14 @@ const Projects = () => {
             JavaScript.
           </p>
         </div>
-        <div className='flex flex-wrap -m-4 rounded'>
+        <div className='flex flex-wrap m-4 rounded'>
           {projects.map((project, index) => (
             <a
               href={project.link}
               key={project.image}
               className='sm:w-1/2 w-100 p-4 rounded'
             >
-              <div className='flex relative h-96'>
+              <div className='flex relative h-96' key={index}>
                 <img
                   alt='gallery'
                   className='absolute inset-0 w-full h-full object-cover object-center rounded'

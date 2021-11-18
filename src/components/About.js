@@ -9,9 +9,27 @@ const About = () => {
           <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium dark:text-white '>
             Hi, I&apos;m Felipe.
             <br className=' lg:inline-block' />
-            Frontend developer and graphic designer.
+            Frontend Developer & Graphic Designer
           </h1>
-          <p className='mb-8 leading-relaxed'></p>
+          <div className='lg:w-9/12'>
+            <p className='mb-2 leading-relaxed'>
+              My name is Felipe, I’m 28 years old and have recently finished a
+              high-level specialization ReactJS boot camp at the ITAcademy at
+              Barcelona Activa.
+            </p>
+            <p className='mb-2 leading-relaxed'>
+              In the past, I’d previously studied software development and have
+              a background in graphic design and prepress. With this new
+              studies, I am looking to redirect my professional career into the
+              IT world.
+            </p>
+            <p className='mb-8 leading-relaxed'>
+              I am currently looking for a Junior Frontend software developer
+              position, ideally with React, where I am able to take advantage of
+              my previous design experience while keep learning and improving as
+              a web developer.
+            </p>
+          </div>
           <div className='flex justify-center items-center'>
             <a
               href='#contact'
