@@ -28,19 +28,27 @@ const NavBar = ({ isDark, toggleDark }) => {
           </a>
         </div>
         {showMenu && (
-          <nav className='flex flex-1 flex-column md:flex-row items-center justify-between order-3 md:order-2 mt-2 md:mt-0'>
-            <div className='md:ml-4'>
-              <a href='#projects' className='mx-4 hover:text-white'>
+          <nav className='flex flex-col md:flex-row justify-center items-center md:justify-start flex-1 order-3 md:order-2 mt-2 md:mt-0'>
+            <div className='pb-2 md:pb-0 md:ml-4'>
+              <a
+                href='#projects'
+                className='md:mx-4 text-xl md:text-base  hover:text-white'
+              >
                 Portfolio
               </a>
-              <a href='#skills' className='mx-4 hover:text-white'>
+            </div>
+            <div className='pb-2 md:pb-0'>
+              <a
+                href='#skills'
+                className='md:mx-4 text-xl md:text-base hover:text-white'
+              >
                 Skills
               </a>
             </div>
-            <div className='mx-2'>
+            <div className='md:ml-auto'>
               <a
                 href='#contact'
-                className='flex border border-gray-500 ml-2 py-1 px-2 focus:outline-none hover:text-white hover:bg-gray-500 rounded text-base'
+                className='flex justify-center border border-gray-500 ml-2 py-1 px-2 focus:outline-none hover:text-white hover:bg-gray-500 rounded text-base'
               >
                 <MdMarkEmailUnread size={24} className='mr-2' />
                 Contact

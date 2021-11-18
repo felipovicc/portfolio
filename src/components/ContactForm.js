@@ -3,7 +3,13 @@ import { useForm } from 'react-hook-form';
 import { MdDone, MdErrorOutline } from 'react-icons/md';
 
 const ContactForm = () => {
-  const [status, setStatus] = useState({});
+  const STATUS = {
+    success: 'SUCCESS',
+    pending: 'PENDING',
+    failure: 'FAILURE',
+  };
+
+  const [status, setStatus] = useState();
 
   const {
     register,
@@ -28,14 +34,14 @@ const ContactForm = () => {
       body: encode({ 'form-name': 'contact', name, email, message }),
     })
       .then((resp) => {
-        resp.ok ? setStatus('SUCCESS') : setStatus('FAILURE');
+        resp.ok ? setStatus(STATUS.success) : setStatus(STATUS.failure);
       })
       .catch((error) => console.error(error));
   };
 
   return status ? (
     status === 'SUCCESS' ? (
-      <div className='m-auto text-green-400 animate__animated animate__fadeInDown '>
+      <div className='m-auto text-green-400 animate__animated animate__fadeIn '>
         <MdDone size={100} className='mx-auto my-2' />
         <div>
           <h2 className='text-xl'>Thank you for your message.</h2>
@@ -74,7 +80,7 @@ const ContactForm = () => {
         </label>
         <input
           {...register('name', { required: true, placeholder: 'Name' })}
-          className='placeholder-gray-500 dark:placeholder-gray-400 w-full bg-gray-200 dark:bg-gray-800 rounded border border-gray-500  focus:ring-2 focus:ring-green-500 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+          className='placeholder-gray-500 dark:placeholder-gray-400 w-full bg-gray-200 dark:bg-gray-800 rounded border border-gray-500  focus:ring-2 focus:ring-green-400 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
         />
         {errors.name && (
           <span className='flex items-center font-medium tracking-wide text-red-500 text-xs mt-1 ml-1'>
@@ -93,7 +99,7 @@ const ContactForm = () => {
             pattern:
               /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
           })}
-          className='placeholder-gray-500 dark:placeholder-gray-400 w-full bg-gray-200 dark:bg-gray-800 rounded border border-gray-500  focus:ring-2 focus:ring-green-500 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+          className='placeholder-gray-500 dark:placeholder-gray-400 w-full bg-gray-200 dark:bg-gray-800 rounded border border-gray-500  focus:ring-2 focus:ring-green-400 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
         />
         {errors.email && (
           <span className='flex items-center font-medium tracking-wide text-red-500 text-xs mt-1 ml-1'>
@@ -110,7 +116,7 @@ const ContactForm = () => {
             required: true,
             placeholder: 'Your message...',
           })}
-          className='placeholder-gray-500 dark:placeholder-gray-400 w-full bg-gray-200 dark:bg-gray-800 rounded border border-gray-500  focus:ring-2 focus:ring-green-500 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+          className='placeholder-gray-500 dark:placeholder-gray-400 w-full bg-gray-200 dark:bg-gray-800 rounded border border-gray-500  focus:ring-2 focus:ring-green-400 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
         />
         {errors.message && (
           <span className='flex items-center font-medium tracking-wide text-red-500 text-xs mt-1 ml-1'>

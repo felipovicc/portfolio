@@ -20,7 +20,7 @@ const Contact = () => {
             style={{ filter: 'opacity(0.7)' }}
             src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11972.933640297904!2d2.165745619775391!3d41.39073715000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ses!4v1634721579614!5m2!1sen!2ses'
           />
-          <div className='bg-gray-200 text-gray-800 dark:text-gray-200 dark:bg-gray-900 relative flex flex-wrap py-6 rounded shadow-lg'>
+          <div className='bg-gray-200 text-gray-800 dark:text-gray-200 dark:bg-gray-900 opacity-80 relative flex flex-wrap py-6 rounded shadow-lg'>
             <div className='lg:w-1/2 px-6'>
               <h2 className='title-font font-bold tracking-widest text-xs '>
                 CURRENTLY BASED AT
