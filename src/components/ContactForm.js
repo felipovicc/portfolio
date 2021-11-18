@@ -26,7 +26,6 @@ const ContactForm = () => {
   };
 
   const onSubmit = (data) => {
-    console.log(data);
     const { name, email, message } = data;
     fetch('/', {
       method: 'POST',
@@ -41,7 +40,7 @@ const ContactForm = () => {
 
   return status ? (
     status === 'SUCCESS' ? (
-      <div className='m-auto text-green-400 animate__animated animate__fadeIn '>
+      <div className='m-auto text-green-400 animate__animated animate__fadeIn'>
         <MdDone size={100} className='mx-auto my-2' />
         <div className=''>
           <h2 className='text-xl'>Thank you for your message.</h2>
@@ -49,7 +48,7 @@ const ContactForm = () => {
         </div>
       </div>
     ) : (
-      <div className='m-auto text-red-500 animate__animated animate__fadeInDown '>
+      <div className='m-auto text-red-500 animate__animated animate__fadeIn'>
         <MdErrorOutline size={100} className='mx-auto my-2' />
         <div className=''>
           <h2 className='text-xl'>There has been an error</h2>
